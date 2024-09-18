@@ -1,0 +1,74 @@
+<div class="container">
+        <div class="header">
+            <h1>Saúde+</h1>
+          </div>
+          
+        </div>
+<main>
+<div class="botoes-wrap">
+    <nav>
+      <ul class="header-lista">
+        <li><a href="#informacoes">Informações</a></li>
+        <li><a href="#consultas">Agendar Consulta</a></li>
+        <li><a href="#medicamentos">Medicamentos</a></li>
+        <li><a href="#sintomas">Sintomas</a></li>
+        <li><a href="#emergencia">Emergência</a></li>
+      </ul>
+    </nav>
+</div>
+
+
+
+          <section id="informacoes">
+            <h2>Informações de Saúde</h2>
+            <p>Conteúdo informativo sobre saúde.</p>
+          </section>
+          <section id="consultas">
+            <h2>Agendamento de Consultas</h2>
+            <form id="agendamento-form">
+              <label for="data">Data:</label>
+              <input type="date" id="data" name="data" required>
+              <label for="hora">Hora:</label>
+              <input type="time" id="hora" name="hora" required>
+              <button type="submit">Agendar</button>
+            </form>
+          </section>
+          <section id="medicamentos">
+            <h2>Lembretes de Medicamentos</h2>
+            <form id="medicamentos-form">
+              <label for="medicamento">Nome do Medicamento:</label>
+              <input type="text" id="medicamento" name="medicamento" required>
+              <label for="horario">Horário:</label>
+              <input type="time" id="horario" name="horario" required>
+              <button type="submit">Adicionar Lembrete</button>
+            </form>
+          </section>
+          <section id="sintomas">
+            <h2>Acompanhamento de Sintomas</h2>
+            <form id="sintomas-form">
+              <label for="sintoma">Sintoma:</label>
+              <input type="text" id="sintoma" name="sintoma" required>
+              <label for="data-sintoma">Data:</label>
+              <input type="date" id="data-sintoma" name="data-sintoma" required>
+              <button type="submit">Adicionar Sintoma</button>
+            </form>
+          </section>
+          <section id="emergencia">
+            <h2>Contatos de Emergência</h2>
+            <p>Liste aqui os contatos de emergência e informações úteis.</p>
+          </section>
+        </main>
+        <footer>
+          <p>&copy; 2024 Aplicativo de Saúde</p>
+        </footer>
+    </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration);
+      }).catch(function(error) {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+    }
+  </script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde+</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="../imagens/unimed.png">
+</head>
+<body>
+
+<div class="container-consultas">
+
+    <div class="background-consultas">
+        <h2>Agenda Médica</h2>
+        <p>Procure a disponibilidade de agenda dos médicos que estão mais perto de você.</p>
+        <form id="agenda-form">
+            <label for="cidade">Cidade:</label>
+            <select id="cidade" name="cidade" required>
+                <option value="">Selecione</option>
+                <!-- Adicione as opções de cidade aqui -->
+            </select>
+
+            <label for="especialidade">Especialidade/Área de Atuação:</label>
+            <select id="especialidade" name="especialidade" required>
+                <option value="">Selecione</option>
+                <!-- Adicione as opções de especialidade aqui -->
+            </select>
+
+            <label for="nome-medico">Nome do Médico/Prestador:</label>
+            <input type="text" id="nome-medico" name="nome-medico" placeholder="Digite o nome do Médico/Prestador" required>
+
+            <label for="bairro">Bairro do Médico/Prestador:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do bairro do Médico/Prestador" required>
+
+            <button type="submit">Buscar Disponibilidade</button>
+        </form>
+    </div>
+
+    <div class="background-consultas">
+        <h2>Agendamento de Consultas</h2>
+        <form class="form-consulta" id="agendamento-form">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
