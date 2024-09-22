@@ -1,0 +1,117 @@
+/* Reseta alguns estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estiliza o contêiner principal */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para o título */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a descrição inicial */
+p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o contêiner de perguntas */
+#questionContainer p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para os rótulos de radio buttons */
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Estilo para os inputs de radio */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estiliza os botões */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#nextBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#backBtn {
+    background-color: #6c757d;
+    color: white;
+    margin-right: 10px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Esconde o botão de voltar quando não necessário */
+#backBtn[style*="none"] {
+    display: none !important;
+}
+
+/* Estilo para o resultado */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* Tornando o design responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p, #questionContainer p, label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+

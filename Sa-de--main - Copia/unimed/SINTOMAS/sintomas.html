@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico Dinâmico</title>
+    <link rel="stylesheet" href="sintomas.css">
+</head>
+<body>
+
+    <header>
+        <img src="../imagens/iconesaude.png" alt="">
+    
+        <ul class="header-ul">
+          <li>Conheça nossa Empresa</li>
+          <li>Planos</li>
+          <li>Precisa de Ajuda?</li>
+          <button class="header-login">
+            <i class="bi bi-person"></i>
+            <span>Entrar</span>
+            </button>
+        </ul>
+      </header>
+
+    <div class="container">
+        <h1>Questionário de Sintomas</h1>
+        <p>Responda as perguntas para descobrir qual especialista você deve consultar.</p>
+        
+        <form id="dynamicForm">
+            <div id="questionContainer"></div>
+            <div id="buttonContainer">
+                <button id="backBtn" type="button" style="display: none;">Voltar</button>
+                <button id="nextBtn" type="button">Próxima Pergunta</button>
+            </div>
+        </form>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="sintomas.js"></script>
+</body>
+</html>
