@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página seja responsiva -->
+    <title>Login - Saúde+</title> <!-- Título da página que aparece na aba do navegador -->
+    
+    <!-- Link para o arquivo CSS personalizado para a página de login -->
+    <link rel="stylesheet" href="login.css">
+    
+    <!-- Ícone que aparece na aba do navegador -->
+    <link rel="icon" href="../imagens/unimed.png">
+    
+    <!-- Link para os ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Link para o CSS do Bootstrap para estilização -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Div principal que envolve toda a área de login -->
+    <div class="container">
+        <!-- Caixa de login centralizada -->
+        <div class="login-box">
+            <h1>Login</h1> <!-- Título da página de login -->
+
+            <!-- Formulário de login -->
+            <form id="login-form">
+                <!-- Campo para inserir o e-mail -->
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required aria-label="Digite seu e-mail">
+                
+                <!-- Campo para inserir a senha -->
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required aria-label="Digite sua senha">
+                
+                <!-- Botão de login que redireciona para a página inicial -->
+                <button class="header-login-btn-success" onclick="window.location.href='../HOME/home.html'">Entrar</button>
+
+                <!-- Opções extras como recuperar senha e link para criar nova conta -->
+                <div class="extra-options">
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a> <!-- Link para recuperação de senha -->
+                    <p>Não tem conta? <a href="#" class="signup-link">Crie uma aqui</a></p> <!-- Link para criar nova conta -->
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
