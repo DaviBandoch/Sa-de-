@@ -1,0 +1,149 @@
+/* Garante que o footer fique no final da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    flex: 1; /* Faz o conteúdo ocupar todo o espaço disponível */
+}
+
+header {
+    background-color: #28a745; /* Cor verde do header */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo do header */
+    align-items: center; /* Alinhamento vertical */
+    flex-direction: row; /* Alinha conteúdo em linha */
+    position: sticky; /* Fixa o header no topo */
+    top: 0; /* Posiciona no topo */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+  }
+  
+  header .logo {
+    margin-right: 20px; /* Espaço entre a imagem e os links */
+  }
+  
+  header img {
+    padding: 15px;
+    border-radius: 13%;
+  }
+  
+  nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
+    display: flex; /* Alinha os itens em linha */
+  }
+  
+  nav li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+  }
+  
+  nav a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+
+  .container-acompanhamentos {
+    flex: 1;
+    max-width: 800px !important; /* Aumenta a largura máxima do container */
+    margin: 20px auto !important; /* Ajusta a margem para centralizar */
+    background: white !important;
+    padding: 30px !important; /* Aumenta o padding interno */
+    border-radius: 8px !important; /* Arredondamento das bordas */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) !important; /* Sombra mais pronunciada */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; /* Espaço igual entre os itens */
+}
+
+
+h2 {
+    color: #333;
+}
+
+.consulta-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 0 1 calc(25% - 10px); /* Largura de 25% menos margem */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+button {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d32f2f; /* Vermelho escuro */
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.container-final {
+    background-color: #1c7430;
+    display: flex;
+    flex-wrap: wrap; /* Permite que as seções se movam para a linha seguinte em telas menores */
+    color: white;
+    padding: 20px;
+    margin-top: auto; /* Faz o footer se mover para baixo */
+  }
+  
+  /* Estiliza as seções do footer */
+  .container-selos,
+  .servicos,
+  .footer-sociais {
+    flex: 1; /* Garante que cada seção ocupe uma parte igual */
+    padding: 0 10px; /* Adiciona espaçamento lateral entre as seções */
+  }
+  
+  /* Ajuste para as imagens do footer */
+  .container-selos img {
+    max-width: 160px;
+    max-height: 160px;
+    margin: 10px;
+  }
+  
+  /* Ajuste para as listas de serviços */
+  .servicos ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .servicos ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilização dos ícones sociais */
+  .footer-sociais .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .footer-sociais .social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .footer-sociais .social-icons i:hover {
+    color: #ddd;
+  }
